@@ -14,6 +14,7 @@
 		ACB1F63C1E9F06DF007844C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB1F63A1E9F06DF007844C5 /* LaunchScreen.storyboard */; };
 		ACB1F6471E9F06E0007844C5 /* TestsProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F6461E9F06E0007844C5 /* TestsProjectTests.swift */; };
 		ACB1F6521E9F06E0007844C5 /* TestsProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F6511E9F06E0007844C5 /* TestsProjectUITests.swift */; };
+		ACB1F6601E9F0C94007844C5 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = ACB1F65F1E9F0C94007844C5 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ACB1F64D1E9F06E0007844C5 /* TestsProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestsProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB1F6511E9F06E0007844C5 /* TestsProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsProjectUITests.swift; sourceTree = "<group>"; };
 		ACB1F6531E9F06E0007844C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB1F65F1E9F0C94007844C5 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = readme.md; path = TestsProjectTests/readme.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		ACB1F6301E9F06DF007844C5 /* TestsProject */ = {
 			isa = PBXGroup;
 			children = (
+				ACB1F65F1E9F0C94007844C5 /* readme.md */,
 				ACB1F6311E9F06DF007844C5 /* AppDelegate.swift */,
 				ACB1F6331E9F06DF007844C5 /* ViewController.swift */,
 				ACB1F6351E9F06DF007844C5 /* Main.storyboard */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB1F6601E9F0C94007844C5 /* readme.md in Sources */,
 				ACB1F6471E9F06E0007844C5 /* TestsProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				ACB1F6581E9F06E0007844C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACB1F6591E9F06E0007844C5 /* Build configuration list for PBXNativeTarget "TestsProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				ACB1F65B1E9F06E0007844C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACB1F65C1E9F06E0007844C5 /* Build configuration list for PBXNativeTarget "TestsProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				ACB1F65E1E9F06E0007844C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

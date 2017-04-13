@@ -11,26 +11,34 @@ import XCTest
 
 class TestsProjectTests: XCTestCase {
     
+    var vc: ViewController!
+    
+    // Roda antes de cada teste
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        // TODO: Dahell's instrumented test?
     }
     
+    // Roda depois de cada teste
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testGetName() {
+        
+        let _ = vc.view // Gambi-arr-a
+        
+        let name = vc.getName(name: "João")
+        // Esperado: Nome: João
+        
+        // Validar se passou ou não
+        XCTAssertTrue(name == "Nome: João")
+        
     }
     
 }
